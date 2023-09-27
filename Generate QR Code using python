@@ -1,0 +1,11 @@
+import pyqrcode
+from pyqrcode import QRCode
+
+#string which represent the QR code
+s = "https:/yarainternationalbrands.com"
+
+#generate QR code
+url = pyqrcode.create(s)
+
+#saving QR Code
+url.svg("qr.svg", scale = 40)
